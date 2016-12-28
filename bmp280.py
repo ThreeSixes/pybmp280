@@ -202,9 +202,6 @@ class bmp280:
                     self.__ucP = int(pBytes)
                     self.__ucT = int(tBytes)
                     
-                    print("UCP: %s" %self.__ucP)
-                    print("UCT: %s" %self.__ucT)
-                    
                     # We don't have to wait.
                     waitForReading = False
                     
