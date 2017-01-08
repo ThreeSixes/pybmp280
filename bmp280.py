@@ -274,10 +274,7 @@ class bmp280:
         """
         Temperature in degrees C. Returns None when we don't have a good reading.
         """
-        retVal = None
-        
-        if self.__readingsGood == True:
-            retVal = round(self.__tempC, 2)
+        retVal = round(self.__tempC, 2)
         
         return retVal
     
@@ -286,11 +283,7 @@ class bmp280:
         """
         Pressure in Pa. Returns None when we don't have a good reading.
         """
-        
-        retVal = None
-        
-        if self.__readingsGood == True:
-            retVal = round(self.__pressPa, 2)
+        retVal = round(self.__pressPa, 2)
         
         return retVal
     
